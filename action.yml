@@ -1,5 +1,0 @@
-name: 'Setup Surreal DB'
-description: 'Sets up a simple surreal db in the background as docker service'
-runs:
-  using: 'docker'
-  image: 'Dockerfile'
