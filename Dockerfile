@@ -2,4 +2,8 @@ FROM surrealdb/surrealdb:latest
 
 EXPOSE 8000
 
-ENTRYPOINT ["/surreal", "start", "--log", "trace", "--user", "root", "--pass", "root"]
+ENV LOG_LEVEL=trace
+ENV ROOT_USERNAME=root
+ENV ROOT_PASSWORD=root
+
+ENTRYPOINT ["/surreal", "start", "--log", "${LOG_LEVEL}", "--user", "${ROOT_USERNAME}", "--pass", "${ROOT_PASSWORD}"]
