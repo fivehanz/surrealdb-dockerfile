@@ -4,7 +4,7 @@ COPY --from=busybox /bin/sh /bin/sh
 
 EXPOSE 8000
 
-ENV LOG_LEVEL=trace
+ENV LOG_LEVEL=debug
 ENV ROOT_USERNAME=root
 ENV ROOT_PASSWORD=root
 ENV DATABASE_PATH=/data/mydb.db
